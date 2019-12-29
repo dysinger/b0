@@ -18,5 +18,5 @@ depends:
 depopts: []
 build:
 [[
-  "ocaml" "pkg/pkg.ml" "build" "--dev-pkg" "%{dev}%"
+  "ocaml" "pkg/pkg.ml" "build" "--dev-pkg" "%{dev?true:false}%"
 ]]
